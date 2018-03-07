@@ -1,0 +1,12 @@
+# Import
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+#Scale
+scaler =StandardScaler()
+
+# Create KMeans instance: kmeans
+kmeans = KMeans(n_clusters=4)
+
+#Pipeline
+pipeline=make_pipeline(scaler,kmeans)
